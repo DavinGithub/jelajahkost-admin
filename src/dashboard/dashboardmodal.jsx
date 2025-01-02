@@ -54,7 +54,7 @@ const DashboardModal = ({ isModalOpen, setIsModalOpen }) => {
       // Append image file
       formDataToSend.append('image', image);
 
-      const response = await fetch('bpkbautodigital.com/api/kost/insert-kost', {
+      const response = await fetch('https://jelajahkost.com/api/kost/insert-kost', {
         method: 'POST',
         body: formDataToSend,
       });

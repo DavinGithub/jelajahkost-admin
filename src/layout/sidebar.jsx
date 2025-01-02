@@ -1,4 +1,4 @@
-import { LayoutDashboard, School, CreditCard } from 'lucide-react';
+import { LayoutDashboard, School } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Sidebar = () => {
@@ -6,14 +6,12 @@ const Sidebar = () => {
 
   const menuItems = [
     { title: 'Dashboard', icon: <LayoutDashboard size={20} />, path: '/dashboard' },
-    { title: 'Universitas', icon: <School size={20} />, path: '/universitas' },
-    { title: 'Payment', icon: <CreditCard size={20} />, path: '/payment' },
   ];
 
   return (
-    <div className="w-64 h-screen bg-white border-r border-gray-200 flex flex-col">
+    <div className="fixed top-0 left-0 w-64 h-screen bg-white border-r border-gray-200 flex flex-col overflow-y-auto">
       <div className="p-4">
-        <h1 className="text-xl font-semibold text-blue-600">DashStack</h1>
+        <h1 className="text-xl font-semibold text-blue-600">Jelajahkost admin</h1>
       </div>
       <nav className="flex-1 p-2">
         {menuItems.map((item, index) => (
